@@ -1,8 +1,7 @@
 import sys
-print ("Tic Tac Toe Game")
+print ("------- Tic Tac Toe Game -------")
 
 # 1D arrat to stoare the game board
-
 board = ["-"]*9
 player = 0 
 
@@ -27,7 +26,6 @@ def check_if_won(player):
     return False
 
 def display_board():
-    #TODO: write code to display board
     i=0
     while i < 9:
         print("{} {} {}".format( board[i], board[i+1] , board[i+2]))
@@ -36,7 +34,6 @@ def display_board():
 display_board()
 
 for i in range(9):
-    # take input from player
     if player == 0:
         #take input from player A
         position = input('Player 0, please enter position: ')
@@ -49,7 +46,6 @@ for i in range(9):
             sys.exit()
         else:
             player = 1
-
     else:
         #take input from player B
         position = input('Player 1, please enter position: ')
